@@ -88,16 +88,6 @@
     .overlay-enter { animation: fadeIn 0.3s ease forwards; }
 
     /* Mobile: make checkout panel clearly visible/full */
-    @media (max-width: 520px) {
-      body { overflow-x: hidden; }
-      #root { width: 100vw; }
-      /* Force the panel overlay to cover nicely */
-      .panel-enter {
-        width: 100vw !important;
-        left: 0 !important;
-        right: 0 !important;
-      }
-    }
 
     .float-group { position: relative; }
     .float-input {

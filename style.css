@@ -1,4 +1,4 @@
-/* ============================================================
+ /* ============================================================
    VELALUNA — Luxury Scented Candles
    styles.css
    ============================================================ */
@@ -227,8 +227,18 @@ body {
   .product-card-mobile { flex: 0 0 82vw; max-width: 340px; scroll-snap-align: start; }
 }
 @media (max-width: 768px) {
-  section  { padding: 80px 24px !important; }
-  nav      { padding: 16px 20px !important; }
-  footer   { padding: 40px 24px !important; }
-  div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; gap: 40px !important; }
+  section          { padding: 80px 24px !important; }
+  footer           { padding: 40px 24px !important; flex-direction: column; text-align: center; }
+  .brand-story-grid { grid-template-columns: 1fr !important; gap: 40px !important; padding: 80px 24px !important; }
+
+  nav              { padding: 14px 16px !important; }
+  .nav-links-group { display: none !important; }
+  .nav-contact     { display: none !important; }
+  .nav-logo span   { font-size: 16px !important; }
+  .nav-cart-btn    { width: 36px !important; height: 36px !important; }
+
+  .panel-enter     { width: 100vw !important; }
+}
+@media (max-width: 480px) {
+  .nav-logo span { font-size: 14px !important; letter-spacing: 0.1em !important; }
 }
